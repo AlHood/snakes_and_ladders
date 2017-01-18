@@ -12,5 +12,37 @@ class TestLadders < MiniTest::Test
 
   end
 
+  def test_ladder_has_properties
+    @ladder1 = Ladder.new
+
+  foot_test = 0
+  top_test = 0
+
+  if @ladder1.top_position > 14 && @ladder1.top_position < 65
+  top_test = true
+  else
+  end
+
+  if @ladder1.foot_position > 0 && @ladder1.foot_position < 41
+  foot_test = true
+  else
+  end
+
+    assert_equal(true, top_test)
+  assert_equal(true, foot_test)
+  end
+
+
+
+    
+
+  end
+
+
+
+
+
+
+
 end
 

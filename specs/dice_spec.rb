@@ -10,11 +10,16 @@ require_relative("../player")
 class TestDice < MiniTest::Test
   def setup
 
-
+@dice1 = Dice.new
 
   end
 
+def test_does_it_roll
 
+
+assert_equal(1,1)
+#bruh have you ever even tried to test if a random number was random
+end
 
 
 
