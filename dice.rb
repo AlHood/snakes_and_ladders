@@ -1,14 +1,13 @@
 class Dice
+  attr_accessor 
 
-
-def initialize
-@dice = "who cares?"
-end
+  def initializex
+  end
 
 
   def roll
-return (1..6).rand
-end
+    return (1..6).to_a.sample
+  end
 
 
 end
