@@ -12,7 +12,7 @@ class TestSnakes < MiniTest::Test
   end
 
 def test_snake_has_properties
-  @snake1 = Snake.new
+  @snake4 = Snake.new
 
 head_test = 0
 tail_test = 0
@@ -22,7 +22,7 @@ head_test = true
 else
 end
 
-if @snake1.tail_position > 4 && @snake1.head_position < 41
+if @snake1.tail_position > 4 && @snake1.tail_position < 50
 tail_test = true
 else
 end
@@ -31,6 +31,15 @@ end
 assert_equal(true, tail_test)
 end
 
+def test_snake_finds_you
+  @player1 = Player.new("bob")
+  @player1.position = 30
+  @snake4.head_position = 30
+
+result = @snake4.player_check
+
+assert_equal("scream", result)
+end
 
 
 end

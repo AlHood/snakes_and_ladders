@@ -31,7 +31,7 @@ class Player
     end
 
   end
-
+  
 
 
 

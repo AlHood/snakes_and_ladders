@@ -9,7 +9,11 @@ def initialize
 
 end
 
-
+def player_check
+  if @board1.player1.position = @head_position
+    return "scream"
+  end
+end
 
 
 

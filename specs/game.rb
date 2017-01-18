@@ -22,10 +22,14 @@ while quit == false
 
   end
   if @board1.player1.position >= 64
-  puts "YOU ARE WINNER"
-elsif @board1.player2.position >= 64
-  puts "Your are also winner"
-end
+    puts "YOU ARE WINNER"
+    puts "PLAYER2 IS A LOSER"
+    quit = true
+  elsif @board1.player2.position >= 64
+    puts "YOU ARE WINNER"
+    puts "PLAYER1 IS A LOSER"
+    quit = true
+  end
   
 end
 puts "It is done."
