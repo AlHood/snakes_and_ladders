@@ -9,30 +9,28 @@ require_relative("../player")
 class TestPlayer < MiniTest::Test
   def setup
 
-@player1 = Player.new("Alastair")
-@player2 = Player.new("Keir")
-@dice = Dice.new
+    @player1 = Player.new("Alastair")
+    @player2 = Player.new("Keir")
+    @dice = Dice.new
 
 
   end
 
-def test_player_position_and_name
+  def test_player_position_and_name
 
-assert_equal("Alastair", @player1.name)
-assert_equal(1, @player2.position)
-
-
-
-end
-
-def test_player_moves
-
-@player1.move_player(4)
-assert_equal(5, @player1.position)
-
-end
+    assert_equal("Alastair", @player1.name)
+    assert_equal(1, @player2.position)
 
 
 
+  end
 
+  def test_player_moves
+
+    @player1.move_player(4)
+    assert_equal(5, @player1.position)
+
+  end
+
+  
 end

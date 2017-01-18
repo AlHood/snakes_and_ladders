@@ -1,7 +1,7 @@
 class Dice
   attr_accessor 
 
-  def initializex
+  def initialize
   end
 
 

@@ -7,25 +7,27 @@ require_relative("../player")
 
 quit = false
 
-
 @board1 = Board.new
 
 
 
 
 while quit == false
-@board1.turn_advance
+  @board1.turn_advance
 
-if @board1.turn_counter % 2 == 0
-  then @board1.player2.turn
+  if @board1.turn_counter % 2 == 0
+    then @board1.player2.turn
 
-else @board1.player1.turn
+  else @board1.player1.turn
 
+  end
+  if @board1.player1.position >= 64
+  puts "YOU ARE WINNER"
+elsif @board1.player2.position >= 64
+  puts "Your are also winner"
 end
-
-
-
+  
+end
 puts "It is done."
 
 
-end
